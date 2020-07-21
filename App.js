@@ -30,13 +30,13 @@ const project = [
     link: 'https://chi-noodlebar.com',
     title: 'Website',
     img: 'https://media.giphy.com/media/QYjvkJMSSkvPIq66mK/giphy.gif',
-    li: ['A marketing website.']
+    li: ['A noodle bar in Vancouver.']
   },
   {
     link: 'https://earnest.education',
     title: 'Website',
     img: 'https://media.giphy.com/media/Tfvno6sueQThNHoqMP/giphy.gif',
-    li: ['A marketing website.']
+    li: ['An education company in Richmond.']
   },
   {
     link: 'https://vocabulary-online-testing.vercel.app',
@@ -46,9 +46,9 @@ const project = [
   },
   {
     link: 'https://remix-demo-chao.vercel.app',
-    title: 'Yi Jian Mei Remix',
+    title: 'Music Remix',
     img: 'https://media.giphy.com/media/iFPQSxCPmEzeHTmaLE/giphy.gif',
-    li: ['xue hua piao piao bei feng xiao xiao.']
+    li: ['Online musical instruments.']
   },
   {
     link: 'https://speed-typer.chaozhang.vercel.app',
