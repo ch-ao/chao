@@ -4,7 +4,7 @@ const template = (id) =>
     
     <div     
       data-aos="flip-up" 
-      data-aos-duration="500"
+      data-aos-duration="300"
       data-aos-easing="ease-in-out"
       data-aos-mirror="true"
       data-aos-once="false"
@@ -30,5 +30,5 @@ const template = (id) =>
 
 $('#heading-research').html(template('research'));
 $('#heading-project').html(template('project'));
-$('#heading-teaching').html(template('codemao'));
+$('#heading-game').html(template('game'));
 $('#heading-about').html(template('about'));

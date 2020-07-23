@@ -64,24 +64,18 @@ const project = [
   }
 ];
 
-const teaching = [
+const game = [
   {
     link: 'https://shequ.codemao.cn/work/42058554',
     title: 'Street Fighter',
     img: 'https://media.giphy.com/media/jRqG23nkLBrA2EjJNE/giphy.gif',
-    li: ['Street Fighter built in CodeMao.']
+    li: ['2 player action game.']
   },
   {
     link: 'https://shequ.codemao.cn/work/41879019',
     title: 'Plants vs Zombies',
     img: 'https://media.giphy.com/media/MFJSYLno1nJhItzf8L/giphy.gif',
-    li: ['Plants vs Zombies built in CodeMao.']
-  },
-  {
-    link: 'https://shequ.codemao.cn/work/41502488',
-    title: 'Shooting Monsters',
-    img: 'https://media.giphy.com/media/cIz8XfXQLaKcN0Bqzg/giphy.gif',
-    li: ['Shooting game with 6 levels.']
+    li: ['Tower defense game.']
   },
   {
     link: 'https://shequ.codemao.cn/work/40479714',
@@ -96,28 +90,34 @@ const teaching = [
     li: ['Cloud data for global ranking.']
   },
   {
+    link: 'https://shequ.codemao.cn/work/53786143',
+    title: 'Super Mario',
+    img: 'https://media.giphy.com/media/dscP9pamgfPUy04COQ/giphy.gif',
+    li: ['Super mario dodge game.']
+  },
+  {
+    link: 'https://shequ.codemao.cn/work/41502488',
+    title: 'Shooting Monsters',
+    img: 'https://media.giphy.com/media/cIz8XfXQLaKcN0Bqzg/giphy.gif',
+    li: ['Shooting game with 6 levels.']
+  },
+  {
     link: 'https://shequ.codemao.cn/work/38969359',
     title: 'Speeding Car',
     img: 'https://media.giphy.com/media/Uu5haIEQHOUjf9QIYx/giphy.gif',
     li: ['Car racing game with different props.']
   },
   {
-    link: 'https://shequ.codemao.cn/work/39429214',
-    title: 'Square Dash',
-    img: 'https://media.giphy.com/media/W0c6V824Q5XLHVFkrr/giphy.gif',
-    li: ['Dash game with different props.']
-  },
-  {
     link: 'https://shequ.codemao.cn/work/40814673',
     title: 'Falppy Bird',
     img: 'https://media.giphy.com/media/MdpKPGAmbDStbWOjef/giphy.gif',
-    li: ['Falppy Bird built in CodeMao.']
+    li: ['Built with Physical Engine.']
   },
   {
     link: 'https://shequ.codemao.cn/work/39573573',
     title: 'Bouncing Ball',
     img: 'https://media.giphy.com/media/ihvScUYUtjGmxEdDBK/giphy.gif',
-    li: ['Physics Engine.']
+    li: ['Built with Physical Engine.']
   },
   {
     link: 'https://shequ.codemao.cn/work/39501914',
@@ -132,6 +132,12 @@ const teaching = [
     li: ['Dodge game with different levels.']
   },
   {
+    link: 'https://shequ.codemao.cn/work/39429214',
+    title: 'Square Dash',
+    img: 'https://media.giphy.com/media/W0c6V824Q5XLHVFkrr/giphy.gif',
+    li: ['Dash game with different props.']
+  },
+  {
     link: 'https://shequ.codemao.cn/work/38147591',
     title: 'No BB Fly',
     img: 'https://media.giphy.com/media/TLUbkUiYFC1fZxQkvS/giphy.gif',
@@ -144,7 +150,7 @@ const render = (arr, animation) => {
   arr.forEach(e => {
     HTML += `<div class="col-lg-6"     
     data-aos= ${animation}
-    data-aos-duration="500"
+    data-aos-duration="300"
     data-aos-easing="ease-in-out"
     data-aos-mirror="true"
     data-aos-once="false"
@@ -167,6 +173,6 @@ const render = (arr, animation) => {
   return HTML;
 }
 
-$('#researchshow').html(render(research, 'slide-right'));
-$('#projectshow').html(render(project, 'zoom-in-down'));
-$('#teachingshow').html(render(teaching, 'fade'));
+$('#researchshow').html(render(research, 'zoom-in-down'));
+$('#projectshow').html(render(project, 'slide-right'));
+$('#gameshow').html(render(game, 'fade'));

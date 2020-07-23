@@ -92,20 +92,19 @@ img {
 #touxiang {
   height: 260px !important;
   width: 260px !important;
-  /* margin-bottom: 20%; */
   margin: 50px auto !important;
 
 }
 
-#project{
+#research{
   background-image: linear-gradient(to bottom, #131313, #3b477c);
 }
 
-#app{
+#project{
   background-image: linear-gradient(to bottom, #3b477c, #6c77a8);
 }
 
-#teaching {
+#game {
   background-image: linear-gradient(to bottom, #6c77a8, #5383aa);
 }
 
