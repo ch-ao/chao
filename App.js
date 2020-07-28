@@ -66,10 +66,16 @@ const project = [
 
 const game = [
   {
+    link: 'https://shequ.codemao.cn/work/55306453',
+    title: 'Block Tower',
+    img: 'https://media.giphy.com/media/j5zwAHn8VZIYPZwjF0/giphy.gif',
+    li: ['CodeMao Sandbox Project.']
+  },
+  {
     link: 'https://shequ.codemao.cn/work/42058554',
     title: 'Street Fighter',
     img: 'https://media.giphy.com/media/jRqG23nkLBrA2EjJNE/giphy.gif',
-    li: ['2 player action game.']
+    li: ['2 players action game.']
   },
   {
     link: 'https://shequ.codemao.cn/work/41879019',
@@ -159,19 +165,23 @@ const render = (arr, animation) => {
         <figure class="figure brick hvr-back-pulse my-4">
           <h3 class="title">${e.title}</h3>
           <img src=${e.img} width=400 height=220 class="rounded img-fluid" alt="chao-images">
+
           <figcaption class="figure-caption">
-              <ul class="list text-left">`;
-        e.li.forEach(x => HTML += `<li>${x}</li>`)
-        HTML += 
-                `
-              </ul>
+          <ul class="list text-left">`;
+          e.li.forEach(x => HTML += `<li>${x}</li>`)
+          HTML += 
+            `
+          </ul>
           </figcaption>
+        
         </figure>
       </a>
     </div>`
   })
   return HTML;
 }
+
+
 
 $('#researchshow').html(render(research, 'zoom-in-down'));
 $('#projectshow').html(render(project, 'slide-right'));
