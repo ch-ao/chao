@@ -181,8 +181,6 @@ const render = (arr, animation) => {
   return HTML;
 }
 
-
-
 $('#researchshow').html(render(research, 'zoom-in-down'));
-$('#projectshow').html(render(project, 'slide-right'));
+$('#projectshow').html(render(project, 'zoom-in-up'));
 $('#gameshow').html(render(game, 'fade'));
