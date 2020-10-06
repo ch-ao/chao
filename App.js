@@ -15,19 +15,25 @@ const research = [
     link: 'https://github.com/zzzchaozzz/ComputerGraphics',
     title: 'Computer Graphics',
     img: 'img/cg.gif',
-    li: ['Display images from raw CT data.']
+    li: ['Render images from raw CT data.']
   },
   {
     link: 'https://github.com/zzzchaozzz/ImageProcessing',
     title: 'Image Processsing', 
-    img: 'img/ip1.png',
-    li: ['Contour detection & Functional Filters.']
+    img: 'img/ip.png',
+    li: ['Contour Detection & Filters.']
   },
   {
-    link: 'https://github.com/zzzchaozzz/ImageProcessing',
-    title: 'Image Processsing', 
-    img: 'img/ip1.png',
-    li: ['Contour detection & Functional Filters.']
+    link: 'https://github.com/chaozhang666/computer-audio/blob/master/VoiceDisguiseResearchPaper_chaoZhang.pdf',
+    title: 'Computer Audio', 
+    img: 'img/audio.png',
+    li: ['Identification of Voice Disguise']
+  },
+  {
+    link: 'https://github.com/chaozhang666/NetworkCommunication/blob/master/GroupResearch.pdf',
+    title: 'RFID Safety', 
+    img: 'img/rfid.png',
+    li: ['Fractional Fourier Transform']
   }
 ];
 
@@ -87,16 +93,16 @@ const project = [
     li: ['Typing game with diffenent levels.']
   },
   {
-    link: 'https://javascript-slides.now.sh',
-    title: 'JavaScript Slider',
-    img: 'https://media.giphy.com/media/KBBMSwABohGtpBWd9m/giphy.gif',
-    li: ['Based on slides.com library.']
-  },
-  {
     link: 'https://exchange-rate-calculator.vercel.app',
     title: 'Exchange Rate Calculator',
     img: 'https://media.giphy.com/media/fvefr3DhTQxCISeLo0/giphy.gif',
     li: ['Live exchange rate API.']
+  },
+  {
+    link: 'https://javascript-slides.now.sh',
+    title: 'JavaScript Slider',
+    img: 'https://media.giphy.com/media/KBBMSwABohGtpBWd9m/giphy.gif',
+    li: ['Based on slides.com library.']
   },
   {
     link: 'https://qqzhang.vercel.app',
@@ -193,6 +199,8 @@ const game = [
   },
 ];
 
+// const allData = research.concat(project, game);
+
 const render = (arr, animation) => {
   let HTML = '';
   arr.forEach(e => {
@@ -206,7 +214,7 @@ const render = (arr, animation) => {
       <a href=${e.link}>
         <figure class="figure brick hvr-back-pulse my-4">
           <h3 class="title">${e.title}</h3>
-          <img src=${e.img} width=400 height=220 class="rounded img-fluid" alt="chao-images">
+          <img src=${e.img} class="rounded img-fluid" alt="chao-images">
 
           <figcaption class="figure-caption">
           <ul class="list text-left">`;
@@ -226,3 +234,4 @@ const render = (arr, animation) => {
 $('#researchshow').html(render(research, 'zoom-in-down'));
 $('#projectshow').html(render(project, 'zoom-in-up'));
 $('#gameshow').html(render(game, 'fade'));
+
