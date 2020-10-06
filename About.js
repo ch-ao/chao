@@ -14,7 +14,7 @@ $('#about').html(`
 
 <!-- About Section Button -->
 <div class="text-center mt-4" style="font-family: Montserrat;">
-  <a class="btn btn-xl  btn-outline-dark increasedFontSize" href="https://github.com/ch-ao">
+  <a class="btn btn-xl  btn-outline-dark increasedFontSize" href="https://github.com/chaozhang666">
     <i class="fab fa-github mr-2 "></i>
    Link to Github Page
   </a>
