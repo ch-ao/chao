@@ -15,9 +15,6 @@ const template = (id) =>
     <!-- Icon Divider -->
     <div class="divider-custom" 
     data-aos="flip-left" 
-    data-aos-duration="500"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
     data-aos-once="true"
     >
       <div class="divider-custom-line"></div>

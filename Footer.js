@@ -1,6 +1,6 @@
 $('#footer').html(`
 <div class="container">
-<div class="row">
+<div class="row text-center">
 
   <!-- Footer Location -->
   <div class="col-lg-4 mb-5 mb-lg-0">
@@ -10,15 +10,15 @@ $('#footer').html(`
   </div>
 
   <!-- Footer Social Icons -->
-  <div class="col-lg-3 mb-5 mb-lg-0">
+  <div class="col-lg-4 mb-5 mb-lg-0">
     <h4 class="text-uppercase mb-4">around me</h4>
-    <a class="btn btn-outline-light  btn-social mx-1" href="mailto: raidenchao@gmail.com">
+    <a class="btn btn-outline-light  btn-social mx-2" href="mailto: raidenchao@gmail.com">
       <i class="fas fa-fw fa-envelope"></i>
     </a>
-    <a class="btn btn-outline-light  btn-social mx-1" href="https://github.com/ch-ao">
+    <a class="btn btn-outline-light  btn-social mx-2" href="https://github.com/chaozhang666">
       <i class="fab fa-fw fa-github"></i>
     </a>
-    <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/profile.php?id=100014959716281">
+    <a class="btn btn-outline-light btn-social mx-2" href="https://www.facebook.com/profile.php?id=100014959716281">
       <!-- btn-outline-dark -->
       <i class="fab fa-fw fa-facebook-f"></i>
     </a>

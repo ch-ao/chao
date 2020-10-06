@@ -206,9 +206,6 @@ const render = (arr, animation) => {
   arr.forEach(e => {
     HTML += `<div class="col-lg-4"     
     data-aos= ${animation}
-    data-aos-duration="300"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
     data-aos-once="true"
     > 
       <a href=${e.link}>
@@ -232,6 +229,6 @@ const render = (arr, animation) => {
 }
 
 $('#researchshow').html(render(research, 'zoom-in-down'));
-$('#projectshow').html(render(project, 'zoom-in-up'));
-$('#gameshow').html(render(game, 'fade'));
+$('#projectshow').html(render(project, 'zoom-in-down'));
+$('#gameshow').html(render(game, 'zoom-in-down'));
 
