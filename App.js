@@ -1,25 +1,31 @@
 const research = [
   {
-    link: 'https://github.com/zzzchaozzz/ComputerGraphics',
-    title: 'Computer Graphics',
-    img: 'img/cg.gif',
-    li: ['WPF Project.' , 'Display images from CT data.']
-  },
-  {
-    link: 'https://github.com/zzzchaozzz/GIS-NavigationToolboxDevelopment',
-    title: 'GIS - Python',
-    img: 'https://media.giphy.com/media/gjsFJuBQg6ABh59RTL/giphy.gif',
-    li: ['City of Vancouver ArcGIS model.' , 'Navigation toolbox developed by Python.']
-  },
-  {
     link: 'https://github.com/zzzchaozzz/Steganography',
     title: 'Steganography',
     img: 'img/sss.png',
     li: ['New steganography algorithm.']
   },
   {
+    link: 'https://github.com/zzzchaozzz/GIS-NavigationToolboxDevelopment',
+    title: 'GIS',
+    img: 'https://media.giphy.com/media/gjsFJuBQg6ABh59RTL/giphy.gif',
+    li: ['City of Vancouver ArcGIS model.']
+  },
+  {
+    link: 'https://github.com/zzzchaozzz/ComputerGraphics',
+    title: 'Computer Graphics',
+    img: 'img/cg.gif',
+    li: ['Display images from raw CT data.']
+  },
+  {
     link: 'https://github.com/zzzchaozzz/ImageProcessing',
-    title: 'Image Processsing',
+    title: 'Image Processsing', 
+    img: 'img/ip1.png',
+    li: ['Contour detection & Functional Filters.']
+  },
+  {
+    link: 'https://github.com/zzzchaozzz/ImageProcessing',
+    title: 'Image Processsing', 
     img: 'img/ip1.png',
     li: ['Contour detection & Functional Filters.']
   }
@@ -27,14 +33,26 @@ const research = [
 
 const project = [
   {
+    link: 'https://web-dev-tutorial-eo8ezjk5c.vercel.app',
+    title: 'Web Dev Tutorial',
+    img: 'https://media.giphy.com/media/KwzTxTAFuiXKQ7ebri/giphy.gif',
+    li: ['ReactJS & Ant Design']
+  },  
+  {
+    link: 'https://search-country-info-n3jtsvhvj.vercel.app',
+    title: 'REST Countries Info',
+    img: 'https://media.giphy.com/media/NwLRiAWGOi33R4SimS/giphy.gif',
+    li: ['Restful API']
+  },
+  {
     link: 'https://chi-noodlebar.com',
-    title: 'Website',
+    title: 'Responsive Website',
     img: 'https://media.giphy.com/media/QYjvkJMSSkvPIq66mK/giphy.gif',
     li: ['A noodle bar in Vancouver.']
   },
   {
     link: 'https://earnest.education',
-    title: 'Website',
+    title: 'Responsive Website',
     img: 'https://media.giphy.com/media/Tfvno6sueQThNHoqMP/giphy.gif',
     li: ['An education company in Richmond.']
   },
@@ -45,10 +63,22 @@ const project = [
     li: ['Online vocabulary testing.']
   },
   {
+    link: 'https://speech-recognition.chaozhang.vercel.app',
+    title: 'Speach Recognition',
+    img: 'https://media.giphy.com/media/HDmiGSoYfUImCRCL2S/giphy.gif',
+    li: ['window.SpeechRecognition']
+  },
+  {
     link: 'https://remix-demo-chao.vercel.app',
     title: 'Music Remix',
     img: 'https://media.giphy.com/media/iFPQSxCPmEzeHTmaLE/giphy.gif',
     li: ['Online musical instruments.']
+  },
+  {
+    link: 'https://to-do-list-peach.vercel.app',
+    title: 'Todo List',
+    img: 'https://media.giphy.com/media/ONyxD52Z8EXKYqxfq8/giphy.gif',
+    li: ['Vanilla JS']
   },
   {
     link: 'https://speed-typer.chaozhang.vercel.app',
@@ -57,20 +87,26 @@ const project = [
     li: ['Typing game with diffenent levels.']
   },
   {
+    link: 'https://javascript-slides.now.sh',
+    title: 'JavaScript Slider',
+    img: 'https://media.giphy.com/media/KBBMSwABohGtpBWd9m/giphy.gif',
+    li: ['Based on slides.com library.']
+  },
+  {
     link: 'https://exchange-rate-calculator.vercel.app',
     title: 'Exchange Rate Calculator',
     img: 'https://media.giphy.com/media/fvefr3DhTQxCISeLo0/giphy.gif',
     li: ['Live exchange rate API.']
+  },
+  {
+    link: 'https://qqzhang.vercel.app',
+    title: 'Web Teaching',
+    img: 'https://media.giphy.com/media/9N4coJidDjycT1eeay/giphy.gif',
+    li: ['Introduction to HTML & CSS']
   }
 ];
 
 const game = [
-  {
-    link: 'https://shequ.codemao.cn/work/55306453',
-    title: 'Block Tower',
-    img: 'https://media.giphy.com/media/j5zwAHn8VZIYPZwjF0/giphy.gif',
-    li: ['CodeMao Sandbox Project.']
-  },
   {
     link: 'https://shequ.codemao.cn/work/42058554',
     title: 'Street Fighter',
@@ -148,18 +184,24 @@ const game = [
     title: 'No BB Fly',
     img: 'https://media.giphy.com/media/TLUbkUiYFC1fZxQkvS/giphy.gif',
     li: ['Codemao start project.']
-  }
+  }, 
+  {
+    link: 'https://shequ.codemao.cn/work/55306453',
+    title: 'Block Tower',
+    img: 'https://media.giphy.com/media/j5zwAHn8VZIYPZwjF0/giphy.gif',
+    li: ['CodeMao Sandbox Project.']
+  },
 ];
 
 const render = (arr, animation) => {
   let HTML = '';
   arr.forEach(e => {
-    HTML += `<div class="col-lg-6"     
+    HTML += `<div class="col-lg-4"     
     data-aos= ${animation}
     data-aos-duration="300"
     data-aos-easing="ease-in-out"
     data-aos-mirror="true"
-    data-aos-once="false"
+    data-aos-once="true"
     > 
       <a href=${e.link}>
         <figure class="figure brick hvr-back-pulse my-4">

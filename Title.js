@@ -7,9 +7,9 @@ const template = (id) =>
       data-aos-duration="300"
       data-aos-easing="ease-in-out"
       data-aos-mirror="true"
-      data-aos-once="false"
+      data-aos-once="true"
       > 
-      <h2 class="page-section-heading text-center text-uppercase name animate__animated animate__pulse animate__infinite">${id}</h2>
+      <h2 class="page-section-heading text-center text-uppercase name" style="font-size: 38px;">${id}</h2>
     </div>
 
     <!-- Icon Divider -->
@@ -18,7 +18,7 @@ const template = (id) =>
     data-aos-duration="500"
     data-aos-easing="ease-in-out"
     data-aos-mirror="true"
-    data-aos-once="false"
+    data-aos-once="true"
     >
       <div class="divider-custom-line"></div>
       <div class="divider-custom-icon">

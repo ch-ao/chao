@@ -21,7 +21,7 @@
 }
 
 .brick:hover {
-  background-color: rgb(163, 250, 219);
+  /* background-color: rgb(163, 250, 219); */
 }
 
 
@@ -64,6 +64,7 @@ img {
 .name {
   color: #7effdb;
   text-shadow: 5px 5px 10px blue;
+  font-size: 25px;
 }
 
 .tt {
